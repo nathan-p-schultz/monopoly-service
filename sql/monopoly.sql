@@ -12,20 +12,20 @@ DROP TABLE IF EXISTS Player;
 
 -- Create the schema.
 CREATE TABLE Game (
-                      ID SERIAL PRIMARY KEY,
-                      time timestamp
+    ID SERIAL PRIMARY KEY,
+    time timestamp
 );
 
 CREATE TABLE Player (
-                        ID SERIAL PRIMARY KEY,
-                        email varchar(50) NOT NULL,
-                        name varchar(50)
+    ID SERIAL PRIMARY KEY,
+    email varchar(50) NOT NULL,
+    name varchar(50)
 );
 
 CREATE TABLE PlayerGame (
-                            gameID integer REFERENCES Game(ID),
-                            playerID integer REFERENCES Player(ID),
-                            score integer
+    gameID integer REFERENCES Game(ID),
+    playerID integer REFERENCES Player(ID),
+    score integer
 );
 
 -- Allow users to select data from the tables.
