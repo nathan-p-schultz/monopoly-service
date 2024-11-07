@@ -16,9 +16,9 @@ It is based on the standard Azure App Service tutorial for Node.js.
 - <https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-cli>  
 
 The database is relational with the schema specified in the `sql/` sub-directory
-and is hosted on [ElephantSQL](https://www.elephantsql.com/). The database server,
-user and password are stored as Azure application settings so that they aren&rsquo;t 
-exposed in this (public) repo.
+and is hosted on [Azure PostgreSQL](https://azure.microsoft.com/en-us/products/postgresql/).
+The database server, user and password are stored as Azure application settings so that they 
+aren&rsquo;t exposed in this (public) repo.
 
 We implement this sample service as a separate repo to simplify Azure integration;
 it&rsquo;s easier to auto-deploy a separate repo to Azure. For your team project&rsquo;s 
