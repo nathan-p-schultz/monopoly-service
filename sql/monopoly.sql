@@ -4,7 +4,7 @@
 -- @author nps9
 -- @version CS 262 Lab 8
 --
-SET search_path TO monopoly;
+SET search_path TO public;
 
 -- Drop previous versions of the tables if they they exist, in reverse order of foreign keys.
 DROP TABLE IF EXISTS buildingLocations;
